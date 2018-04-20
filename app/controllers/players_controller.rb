@@ -1,30 +1,30 @@
 class PlayersController < ApplicationController
   before_action :set_player, only: [:show, :edit, :update, :destroy]
 
-  # GET /players
-  # GET /players.json
+  # GET /kart/players
+  # GET /kart/players.json
   def index
     @players = Player.all
   end
 
-  # GET /players/1
-  # GET /players/1.json
+  # GET /kart/players/1
+  # GET /kart/players/1.json
   def show
   end
 
-  # GET /players/new
+  # GET /kart/players/new
   def new
     @player = Player.new
     @matches = Match.all
   end
 
-  # GET /players/1/edit
+  # GET /kart/players/1/edit
   def edit
     @matches = Match.all
   end
 
-  # POST /players
-  # POST /players.json
+  # POST /kart/players
+  # POST /kart/players.json
   def create
     @player = Player.new(player_params)
 
@@ -39,8 +39,8 @@ class PlayersController < ApplicationController
     end
   end
 
-  # PATCH/PUT /players/1
-  # PATCH/PUT /players/1.json
+  # PATCH/PUT /kart/players/1
+  # PATCH/PUT /kart/players/1.json
   def update
     respond_to do |format|
       if @player.update(player_params)
@@ -53,8 +53,8 @@ class PlayersController < ApplicationController
     end
   end
 
-  # DELETE /players/1
-  # DELETE /players/1.json
+  # DELETE /kart/players/1
+  # DELETE /kart/players/1.json
   def destroy
     @player.destroy
     respond_to do |format|
