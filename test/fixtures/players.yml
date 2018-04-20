@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  totalScore: 1
+  matchesPlayed: 1
+  rank: 1
+  slackId: MyString
+
+two:
+  name: MyString
+  totalScore: 1
+  matchesPlayed: 1
+  rank: 1
+  slackId: MyString
