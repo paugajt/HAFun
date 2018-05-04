@@ -12,16 +12,6 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :date %>
-    <%= form.date_select :date %>
-  </div>
-
-  <div class="field">
-    <%= form.label :time %>
-    <%= form.time_select :time %>
-  </div>
-
-  <div class="field">
     <%= form.label :player_id%><br>
     <%= form.collection_check_boxes(:player_ids, @players, :id, :name) %>
   </div>
